@@ -102,7 +102,7 @@ class Tweet {
             : TweetEntities.fromJson(json["extended_entities"]),
         user: User.fromJson(json["user"]),
         isQuoteStatus:
-            json["is_quote_status"] == null ? null : json["is_quote_status"],
+            json["is_quote_status"] == null ? false : json["is_quote_status"],
         favorited: json["favorited"] == null ? null : json["favorited"],
         favoriteCount:
             json['favorite_count'] == null ? null : json["favorite_count"],
