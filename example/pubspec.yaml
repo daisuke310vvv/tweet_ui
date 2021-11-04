@@ -20,6 +20,7 @@ dev_dependencies:
 
 flutter:
   assets:
+    - assets/tweet_examples/test.json
     - assets/tweet_examples/tweet_1_photo.json
     - assets/tweet_examples/tweet_2_photos.json
     - assets/tweet_examples/tweet_3_photos.json

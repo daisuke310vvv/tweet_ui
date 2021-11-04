@@ -91,9 +91,7 @@ class Tweet {
         retweetedStatus: json["retweeted_status"] == null
             ? null
             : Tweet.fromJson(json["retweeted_status"]),
-        text: json["text"] == null
-            ? (json["full_text"] == null ? null : json["full_text"])
-            : json["text"],
+        text: json["full_text"] ?? json["text"] ?? '',
         entities: json["entities"] == null
             ? const TweetEntities.empty()
             : TweetEntities.fromJson(json["entities"]),

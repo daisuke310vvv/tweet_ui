@@ -49,6 +49,7 @@ class TweetText extends StatelessWidget {
     var unescape = new HtmlUnescape();
 
     if (tweetVM.startDisplayText == 0 && tweetVM.endDisplayText == 0) return [];
+    print(tweetVM.text);
 
     if (tweetVM.allEntities.isEmpty) {
       spans.add(TextSpan(

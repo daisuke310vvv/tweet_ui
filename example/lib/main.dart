@@ -16,6 +16,11 @@ class TweetUiExample extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           OpenTweetPageButton(
+            title: "test",
+            tweetPath: 'assets/tweet_examples/test.json',
+            quoteTweetPath: 'assets/tweet_examples/test.json',
+          ),
+          OpenTweetPageButton(
             title: "1 photo",
             tweetPath: 'assets/tweet_examples/tweet_1_photo.json',
             quoteTweetPath: 'assets/tweet_examples/tweet_quote_1_photo.json',

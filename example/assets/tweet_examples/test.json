@@ -1,0 +1,303 @@
+{
+	"contributors": null,
+	"coordinates": null,
+	"created_at": "Tue Nov 02 21:00:01 +0000 2021",
+	"display_text_range": [
+		0,
+		139
+	],
+	"entities": {
+		"urls": [],
+		"hashtags": [
+			{
+				"indices": [
+					0,
+					5
+				],
+				"text": "DeNA"
+			},
+			{
+				"indices": [
+					15,
+					20
+				],
+				"text": "石井琢朗"
+			},
+			{
+				"indices": [
+					35,
+					39
+				],
+				"text": "斎藤隆"
+			},
+			{
+				"indices": [
+					67,
+					72
+				],
+				"text": "鈴木尚典"
+			},
+			{
+				"indices": [
+					98,
+					103
+				],
+				"text": "三浦大輔"
+			},
+			{
+				"indices": [
+					122,
+					131
+				],
+				"text": "baystars"
+			},
+			{
+				"indices": [
+					132,
+					139
+				],
+				"text": "98年の歓喜"
+			}
+		],
+		"url": {
+			"urls": null
+		},
+		"user_mentions": [],
+		"media": [
+			{
+				"id": 1455584114611228672,
+				"id_str": "1455584114611228672",
+				"media_url": "http://pbs.twimg.com/media/FDNGCkwakAA34iZ.jpg",
+				"media_url_https": "https://pbs.twimg.com/media/FDNGCkwakAA34iZ.jpg",
+				"url": "https://t.co/UN2JlhLYYu",
+				"display_url": "pic.twitter.com/UN2JlhLYYu",
+				"expanded_url": "https://twitter.com/nikkan_yakyuude/status/1455640865653895190/photo/1",
+				"sizes": {
+					"medium": {
+						"w": 1150,
+						"h": 755,
+						"resize": "fit"
+					},
+					"thumb": {
+						"w": 150,
+						"h": 150,
+						"resize": "crop"
+					},
+					"small": {
+						"w": 680,
+						"h": 446,
+						"resize": "fit"
+					},
+					"large": {
+						"w": 1150,
+						"h": 755,
+						"resize": "fit"
+					}
+				},
+				"source_status_id": 0,
+				"source_status_id_str": "",
+				"type": "photo",
+				"indices": [
+					140,
+					163
+				],
+				"video_info": {
+					"aspect_ratio": null,
+					"duration_millis": 0,
+					"variants": null
+				},
+				"ext_alt_text": ""
+			}
+		]
+	},
+	"extended_entities": {
+		"urls": null,
+		"hashtags": null,
+		"url": {
+			"urls": null
+		},
+		"user_mentions": null,
+		"media": [
+			{
+				"id": 1455584114611228672,
+				"id_str": "1455584114611228672",
+				"media_url": "http://pbs.twimg.com/media/FDNGCkwakAA34iZ.jpg",
+				"media_url_https": "https://pbs.twimg.com/media/FDNGCkwakAA34iZ.jpg",
+				"url": "https://t.co/UN2JlhLYYu",
+				"display_url": "pic.twitter.com/UN2JlhLYYu",
+				"expanded_url": "https://twitter.com/nikkan_yakyuude/status/1455640865653895190/photo/1",
+				"sizes": {
+					"medium": {
+						"w": 1150,
+						"h": 755,
+						"resize": "fit"
+					},
+					"thumb": {
+						"w": 150,
+						"h": 150,
+						"resize": "crop"
+					},
+					"small": {
+						"w": 680,
+						"h": 446,
+						"resize": "fit"
+					},
+					"large": {
+						"w": 1150,
+						"h": 755,
+						"resize": "fit"
+					}
+				},
+				"source_status_id": 0,
+				"source_status_id_str": "",
+				"type": "photo",
+				"indices": [
+					140,
+					163
+				],
+				"video_info": {
+					"aspect_ratio": null,
+					"duration_millis": 0,
+					"variants": null
+				},
+				"ext_alt_text": ""
+			}
+		]
+	},
+	"extended_tweet": {
+		"full_text": "",
+		"display_text_range": null,
+		"entities": {
+			"urls": null,
+			"hashtags": null,
+			"url": {
+				"urls": null
+			},
+			"user_mentions": null,
+			"media": null
+		},
+		"extended_entities": {
+			"urls": null,
+			"hashtags": null,
+			"url": {
+				"urls": null
+			},
+			"user_mentions": null,
+			"media": null
+		}
+	},
+	"favorite_count": 1304,
+	"favorited": false,
+	"filter_level": "",
+	"full_text": "#DeNA が巨人を退団した #石井琢朗 氏、前ヤクルト投手コーチの #斎藤隆 氏を1軍コーチとして招聘。\nBC・神奈川の監督だった #鈴木尚典 氏とともに、98年の日本一メンバーがコーチとして #三浦大輔 監督を支え、来季の巻き返しを目指す\n#baystars #98年の歓喜 https://t.co/UN2JlhLYYu",
+	"has_extended_profile": false,
+	"id": 1455640865653895190,
+	"id_str": "1455640865653895190",
+	"in_reply_to_screen_name": "",
+	"in_reply_to_status_id": 0,
+	"in_reply_to_status_id_str": "",
+	"in_reply_to_user_id": 0,
+	"in_reply_to_user_id_str": "",
+	"is_translation_enabled": false,
+	"lang": "ja",
+	"place": {
+		"attributes": null,
+		"bounding_box": {
+			"coordinates": null,
+			"type": ""
+		},
+		"contained_within": null,
+		"country": "",
+		"country_code": "",
+		"full_name": "",
+		"geometry": {
+			"coordinates": null,
+			"type": ""
+		},
+		"id": "",
+		"name": "",
+		"place_type": "",
+		"polylines": null,
+		"url": ""
+	},
+	"quoted_status_id": 0,
+	"quoted_status_id_str": "",
+	"quoted_status": null,
+	"possibly_sensitive": false,
+	"possibly_sensitive_appealable": false,
+	"retweet_count": 432,
+	"retweeted": false,
+	"retweeted_status": null,
+	"source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App<\/a>",
+	"scopes": null,
+	"text": "#DeNA が巨人を退団した #石井琢朗 氏、前ヤクルト投手コーチの #斎藤隆 氏を1軍コーチとして招聘。\nBC・",
+	"user": {
+		"contributors_enabled": false,
+		"created_at": "Mon Jan 29 06:31:06 +0000 2018",
+		"default_profile": false,
+		"default_profile_image": false,
+		"description": "日刊スポーツ新聞社の野球取材班のアカウントです。 #野球を愛するファンへ 　プロ野球、メジャーリーグ、アマ野球を総合的に情報発信します。写真、コメント、プレイバック記事…「野球のサラダボウル」的なアカウントを目指します！掲載内容は必ずしも日刊スポーツの立場、戦略、意見を代表するものではありません。",
+		"email": "",
+		"entities": {
+			"urls": null,
+			"hashtags": null,
+			"url": {
+				"urls": [
+					{
+						"indices": [
+							0,
+							23
+						],
+						"url": "https://t.co/btYqDMqbWJ",
+						"display_url": "nikkansports.com/baseball/",
+						"expanded_url": "https://www.nikkansports.com/baseball/"
+					}
+				]
+			},
+			"user_mentions": null,
+			"media": null
+		},
+		"favourites_count": 330,
+		"follow_request_sent": false,
+		"followers_count": 14190,
+		"following": false,
+		"friends_count": 20,
+		"geo_enabled": true,
+		"has_extended_profile": false,
+		"id": 957863653767704576,
+		"id_str": "957863653767704576",
+		"is_translator": false,
+		"is_translation_enabled": false,
+		"lang": "",
+		"listed_count": 217,
+		"location": "東京都中央区築地",
+		"name": "日刊スポーツ野球取材基地",
+		"notifications": false,
+		"profile_background_color": "000000",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/957863653767704576/1601075780",
+		"profile_image_url": "http://pbs.twimg.com/profile_images/1223261182775005185/-v4GeMBF_normal.jpg",
+		"profile_image_url_https": "https://pbs.twimg.com/profile_images/1223261182775005185/-v4GeMBF_normal.jpg",
+		"profile_link_color": "1B95E0",
+		"profile_sidebar_border_color": "000000",
+		"profile_sidebar_fill_color": "000000",
+		"profile_text_color": "000000",
+		"profile_use_background_image": false,
+		"protected": false,
+		"screen_name": "nikkan_yakyuude",
+		"show_all_inline_media": false,
+		"status": null,
+		"statuses_count": 19438,
+		"time_zone": "",
+		"url": "https://t.co/btYqDMqbWJ",
+		"utc_offset": 0,
+		"verified": false,
+		"withheld_in_countries": [],
+		"withheld_scope": ""
+	},
+	"withheld_copyright": false,
+	"withheld_in_countries": null,
+	"withheld_scope": ""
+}
