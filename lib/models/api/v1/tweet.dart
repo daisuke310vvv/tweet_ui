@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:tweet_ui/models/api/entieties/tweet_entities.dart';
-import 'package:tweet_ui/models/api/user.dart';
+import 'package:tweet_ui/models/api/v1/entieties/tweet_entities.dart';
+import 'package:tweet_ui/models/api/v1/user.dart';
 
 /// docs are from https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object
 /// Tweets are the basic atomic building block of all things Twitter. Tweets are also known as “status updates.”
@@ -11,7 +11,7 @@ import 'package:tweet_ui/models/api/user.dart';
 ///
 /// To parse this JSON data, do:
 /// final tweet = tweetFromJson(jsonString);
-class Tweet {
+class TweetV1Response {
   /// UTC time when this Tweet was created.
   String createdAt;
 
@@ -27,14 +27,14 @@ class Tweet {
 
   /// This field only surfaces when the Tweet is a quote Tweet.
   /// This attribute contains the Tweet object of the original Tweet that was quoted.
-  Tweet? quotedStatus;
+  TweetV1Response? quotedStatus;
 
   /// Users can amplify the broadcast of Tweets authored by other users by retweeting.
   /// Retweets can be distinguished from typical Tweets by the existence of a retweeted_status attribute.
   /// This attribute contains a representation of the original Tweet that was retweeted.
   /// Note that retweets of retweets do not show representations of the intermediary retweet, but only the original Tweet.
   /// (Users can also unretweet a retweet they created by deleting their retweet.)
-  Tweet? retweetedStatus;
+  TweetV1Response? retweetedStatus;
 
   /// The actual UTF-8 text of the status update. See twitter-text for details on what is currently
   /// considered valid characters.
@@ -60,10 +60,16 @@ class Tweet {
   /// The number of favorites(hearts)
   int? favoriteCount;
 
+  /// Nullable. Perspectival. Indicates whether this Tweet has been replied by to
+  bool? replied;
+
+  /// The number of replies
+  int? replyCount;
+
   /// Nullable. List of two unicode code point indices, identifying the inclusive start and exclusive end of the displayable content of the Tweet.
   List<int>? displayTextRange;
 
-  Tweet({
+  TweetV1Response({
     required this.createdAt,
     required this.id,
     required this.idStr,
@@ -76,22 +82,26 @@ class Tweet {
     this.isQuoteStatus = false,
     this.favorited,
     this.favoriteCount,
+    this.replied,
+    this.replyCount,
     this.displayTextRange,
   });
 
-  factory Tweet.fromRawJson(String str) => Tweet.fromJson(json.decode(str));
+  factory TweetV1Response.fromRawJson(String str) =>
+      TweetV1Response.fromJson(json.decode(str));
 
-  factory Tweet.fromJson(Map<String, dynamic> json) => new Tweet(
+  factory TweetV1Response.fromJson(Map<String, dynamic> json) =>
+      new TweetV1Response(
         createdAt: json["created_at"] == null ? null : json["created_at"],
         id: json["id"] == null ? null : json["id"].toDouble(),
         idStr: json["id_str"] == null ? null : json["id_str"],
         quotedStatus: json["quoted_status"] == null
             ? null
-            : Tweet.fromJson(json["quoted_status"]),
+            : TweetV1Response.fromJson(json["quoted_status"]),
         retweetedStatus: json["retweeted_status"] == null
             ? null
-            : Tweet.fromJson(json["retweeted_status"]),
-        text: json["full_text"] ?? json["text"] ?? '',
+            : TweetV1Response.fromJson(json["retweeted_status"]),
+        text: json["text"] ?? json["full_text"] ?? '',
         entities: json["entities"] == null
             ? const TweetEntities.empty()
             : TweetEntities.fromJson(json["entities"]),
@@ -104,6 +114,8 @@ class Tweet {
         favorited: json["favorited"] == null ? null : json["favorited"],
         favoriteCount:
             json['favorite_count'] == null ? null : json["favorite_count"],
+        replied: json["replied"] == null ? null : json["replied"],
+        replyCount: json["reply_count"] == null ? null : json["reply_count"],
         displayTextRange: json["display_text_range"] == null
             ? null
             : (json["display_text_range"]).cast<int>(),

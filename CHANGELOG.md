@@ -5,6 +5,48 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+
+## [4.0.2] - 28.05.2022
+### Changed
+- Added an option to autoplay videos
+- Added an option to disable fullscreen in video
+
+## [4.0.1] - 10.04.2022
+### Changed
+- Added the ability to show the number of tweet replies on each tweet
+
+## [4.0.0] - 06.04.2022
+### Changed
+- [BREAKING] - Change onTapImage to OnTapImage to remove analyser warning
+- Updating ios version for example project to 11 to support better player
+- Regenerating example project with flutter create command
+
+### Removed:
+- [BREAKING] - removed `useVideoPlayer` - now betterplayer will be used in a Tweet containing a video
+- unused video_player dependency
+- lock file from repository - adding it to gitignore
+
+## [4.0.0-dev.1] - 21.03.2022
+### Changed
+- Adding android:exported="true" to example app to be able to run it on Android 12
+- Added support for single tweet in data response (e.g. from GET /2/tweets/:id endpoint)
+- Fix retweet in Twitter API V2
+- updated url_launcher
+
+## [4.0.0-dev.0] - 18.02.2022
+### Changed
+- Update SDK and Flutter versions
+- Update Android SDK versions
+- Update cached_network_image, video_player, better_player, photo_view, url_launcher
+- Added alpha version of support for Twitter API V2
+  - [BREAKING] - Changing Tweet to TweetV1Response, changing fromTweet to fromTweetV1
+  - Adding dependencies for: build_runner, json_serializable and json_annotation
+  - Added new DTOs for Twitter V2 objects
+  - Adding converter from Twitter V2 object to TweetVM
+  - Adding factory constructors for TweetView, CompactTweetView and EmbeddedTweetView that accept API V2 model
+  - Added example json files for Twitter API V2
+  - Updated README with Twitter API V2 examples
 
 ## [3.0.1] - 28.09.2021
 ### Changed
