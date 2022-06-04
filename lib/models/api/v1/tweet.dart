@@ -101,7 +101,7 @@ class TweetV1Response {
         retweetedStatus: json["retweeted_status"] == null
             ? null
             : TweetV1Response.fromJson(json["retweeted_status"]),
-        text: json["text"] ?? json["full_text"] ?? '',
+        text: json["full_text"] ?? json["text"] ?? '',
         entities: json["entities"] == null
             ? const TweetEntities.empty()
             : TweetEntities.fromJson(json["entities"]),
